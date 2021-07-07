@@ -1,0 +1,154 @@
+:root{
+    --gradient: linear-gradient(
+      45deg, #00b12c, #008120, #00b12c,#008120
+    );
+  }
+
+.titre img{
+    padding: 10px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.titre img:hover{
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.navbar .titre{
+    left: 0;
+    width: 12%;
+    display: inline-block;
+} 
+.navbar{
+    background-color: white;
+    border-bottom: 2px solid rgb(0, 126, 0);
+    margin-bottom: 50px;
+}
+.navbar ul a{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+button{
+    display: inline-block;
+}
+.navbar .sign{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    margin-right:30px ;
+    background-color: rgb(0, 126, 0);
+    border: 1px solid rgb(0, 126, 0);
+}
+
+.navbar .sign:hover{
+    color: rgb(0, 126, 0); 
+    background-color: white;
+    transition: 0.2s;
+}
+
+/* NAVBAR */
+
+html{
+    background-color: rgb(237, 255, 237); 
+}
+
+.sku{
+    background-color:rgb(237, 255, 237); 
+    height: 88vh;
+}
+
+.container-fluid form{
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(0, 126, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form{
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(175, 175, 175);
+}
+
+.form .user, .form .pw{
+    border: none;
+    width: 55%;
+    border-bottom: 1px solid rgb(0, 126, 0); ;
+    outline: none;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.form .sbm{
+    padding: 10px;
+    width: 25%;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-image: var(--gradient);
+    background-size: 300%;
+    transition: background-position 1s;
+}
+
+.form .sbm:hover{
+    background-position: right;
+}
+
+
+.form .user:focus, .form .pw:focus{
+    outline: none;
+    width: 75%;
+    transition: 0.2s;
+    border-bottom: 1px solid rgb(0, 196, 0); ;
+}
+
+.form h2{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom:40px;
+    padding-bottom: 15px;
+    width: 50%;
+    color:rgb(0, 78, 0);
+    border-bottom: 1px dashed rgb(0, 126, 0);;
+}
+
+.connexion{
+    margin-top: 100px;
+}
+
+
+
+@media (max-width:800px){
+    .form{
+        width: 90%;
+    }
+    .form .sbm{
+        width: 40%;
+    }
+
+    .form .pw, .form .user{
+        width: 65%;
+    }
+}
+
+/* FOOTER */
+
+footer .container-fluid{
+    background-color:  rgb(29, 29, 29);
+    padding: 30px;
+}
+
+footer h5{
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+footer .col-sm{
+    color: white;
+    text-align: center;
+}
